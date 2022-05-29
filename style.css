@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+  --main: #BC9380;
+  --background: #F5CF94;
+  --card-width: 320px;
+  --image-width: calc(var(--card-width) / 1.5);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.img{
+  position:relative;
+  margin:-8rem auto;
+  background-image: url('https://cdn.pixabay.com/photo/2017/10/25/08/25/cupcakes-2887270_960_720.jpg');
+  width:100%;
+  width: var(--image-width);
+  height: var(--image-width);
+  border-radius:50%;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+  
+};
+
+main {
+  height:100vh;
+  backround-image:linear-gradient(to bottom right, #F5CF94, #FCEAAE);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card{
+  position: relative;
+  width: 100%;
+  max-width: var(--card-width);
+  background-color: var(--background);
+  border-radius:1rem;
+  padding:1.5rem;
+  text-align:center;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+  transition:0.5s;
+}
